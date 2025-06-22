@@ -1,237 +1,168 @@
-# 💪 Kỷ Luật Thép 30 Ngày - Iron Fit 30 Days
+# 🏋️‍♂️ Kỷ Luật Thép 30 Ngày
 
-> App theo dõi kế hoạch dinh dưỡng và tập luyện 30 ngày với giao diện đẹp và tính năng lưu trữ tiến độ.
+<div align="center">
+  <img src="src/assets/logo.svg" alt="Iron Fit 30 Days Logo" width="120" height="120">
+  <h1>Iron Fit 30 Days</h1>
+  <p><strong>Ứng dụng theo dõi kế hoạch dinh dưỡng và tập luyện 30 ngày</strong></p>
+  
+  [![Vue.js](https://img.shields.io/badge/Vue.js-3.x-4FC08D?style=for-the-badge&logo=vue.js)](https://vuejs.org/)
+  [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+  [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+</div>
 
-![Vue.js](https://img.shields.io/badge/Vue.js-3.x-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-4.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![LocalStorage](https://img.shields.io/badge/LocalStorage-Enabled-FF6B6B?style=for-the-badge)
+---
 
-## 🎯 Mục tiêu
+## 🎯 **Tính năng chính**
 
-App giúp người dùng theo dõi và duy trì kế hoạch dinh dưỡng và tập luyện trong 30 ngày với:
-- ✅ Thực đơn chi tiết cho 3 bữa/ngày
-- ✅ Bài tập cụ thể với thời gian
-- ✅ Lưu trữ tiến độ tự động
-- ✅ Giao diện responsive, dễ sử dụng
-- ✅ Progress tracking real-time
+### ✅ **Kế hoạch 30 ngày**
+- 📅 Hiển thị kế hoạch dinh dưỡng và tập luyện chi tiết
+- ✅ Checkbox tracking với localStorage
+- 🎯 Progress bar tổng thể và theo ngày
+- 🌟 Highlight ngày hiện tại với badge "Hôm nay"
+- 📱 Responsive design cho mobile
 
-## 🚀 Tính năng chính
+### 🛒 **Danh sách mua sắm thông minh**
+- 🥖 **Thực phẩm đồ khô:** Mua 1 lần/tháng (yến mạch, gạo lứt, hạt chia, hạt mix)
+- 🥩 **Thực phẩm tươi:** Mua theo tuần (4 tuần)
+- ✅ Checkbox tracking cho từng tuần
+- 💰 Tiết kiệm ~425,000 VNĐ/tháng
+- 📊 Progress tracking cho shopping
 
-### 📋 Kế hoạch 30 ngày
-- **Sáng**: Thực đơn bữa sáng giàu protein
-- **Trưa**: Bữa trưa cân bằng dinh dưỡng
-- **Tối**: Bữa tối nhẹ, ít carb
-- **Tập luyện**: Bài tập cụ thể với thời gian
-- **Ghi chú**: Lời nhắc và động viên
+### 🏃‍♂️ **Lịch trình đặc biệt**
+- **Thứ 2-6:** Bỏ bữa trưa (ăn ở công ty), chỉ bữa sáng và tối
+- **Cuối tuần:** Đầy đủ 3 bữa với đa dạng thực phẩm
+- 🥗 Tập trung vào protein nạc và rau xanh
 
-### 💾 Lưu trữ dữ liệu
-- Tự động lưu trạng thái checkbox vào localStorage
-- Không mất dữ liệu khi reload trang
-- Mỗi ngày có key riêng để quản lý
+---
 
-### 📊 Theo dõi tiến độ
-- Progress bar hiển thị % hoàn thành
-- Counter: X/150 tasks hoàn thành
-- Cập nhật real-time khi tích chọn
+## 🚀 **Cài đặt và chạy**
 
-### 📱 Responsive Design
-- Giao diện tối ưu cho mobile
-- Grid layout tự động điều chỉnh
-- Font size responsive
-
-## 🛠️ Cài đặt và chạy
-
-### Yêu cầu hệ thống
-- Node.js 16+ 
-- npm hoặc yarn
-
-### Bước 1: Clone repository
 ```bash
-git clone <repository-url>
+# Clone repository
+git clone https://github.com/honghanh3123/iron-fit-30.git
 cd iron-fit-30
-```
 
-### Bước 2: Cài đặt dependencies
-```bash
+# Cài đặt dependencies
 npm install
-```
 
-### Bước 3: Chạy development server
-```bash
+# Chạy development server
 npm run dev
-```
 
-### Bước 4: Build cho production
-```bash
+# Build cho production
 npm run build
 ```
 
-## 📁 Cấu trúc dự án
+---
+
+## 📱 **Screenshots**
+
+<div align="center">
+  <img src="https://via.placeholder.com/300x200/667eea/ffffff?text=Plan+View" alt="Plan View" width="300">
+  <img src="https://via.placeholder.com/300x200/764ba2/ffffff?text=Shopping+List" alt="Shopping List" width="300">
+</div>
+
+---
+
+## 🛠️ **Công nghệ sử dụng**
+
+- **Frontend:** Vue 3 + Composition API
+- **Build Tool:** Vite
+- **Styling:** CSS với responsive design
+- **Storage:** localStorage
+- **Icons:** SVG custom
+
+---
+
+## 📊 **Cấu trúc dự án**
 
 ```
 iron-fit-30/
 ├── src/
-│   ├── App.vue                 # Component chính
 │   ├── components/
-│   │   └── DayCard.vue         # Component hiển thị từng ngày
+│   │   ├── DayCard.vue          # Card hiển thị từng ngày
+│   │   └── ShoppingList.vue     # Danh sách mua sắm
 │   ├── data/
-│   │   └── plan.js             # Dữ liệu kế hoạch 30 ngày
+│   │   └── plan.js              # Dữ liệu kế hoạch 30 ngày
+│   ├── utils/
+│   │   └── dateUtils.js         # Tiện ích xử lý ngày tháng
 │   ├── assets/
-│   │   ├── main.css            # CSS chính
-│   │   └── base.css            # CSS cơ bản
-│   └── main.js                 # Entry point
+│   │   └── logo.svg             # Logo project
+│   ├── App.vue                  # Component chính
+│   └── main.js                  # Entry point
 ├── public/
-├── package.json
-├── vite.config.js
-├── README.md
-└── MEMORY_BANK.md
+│   └── favicon.svg              # Favicon
+├── SHOPPING_LIST.md             # Danh sách mua sắm chi tiết
+├── MEMORY_BANK.md               # Tài liệu kỹ thuật
+└── README.md                    # Tài liệu này
 ```
-
-## 🎨 Giao diện
-
-### Screenshots
-- **Desktop**: Grid layout với nhiều cards
-- **Mobile**: Single column layout
-- **Progress Bar**: Hiển thị tiến độ hoàn thành
-- **Cards**: Hover effects và animations
-
-### Design System
-- **Font**: Inter (Google Fonts)
-- **Colors**: Blue gradient (#667eea → #764ba2)
-- **Spacing**: 8px grid system
-- **Shadows**: Subtle elevation effects
-
-## 🔧 Công nghệ sử dụng
-
-### Frontend
-- **Vue 3** - Composition API
-- **Vite** - Build tool và dev server
-- **CSS3** - Flexbox, Grid, Animations
-- **LocalStorage** - Data persistence
-
-### Key Features
-- **Reactive State Management** - Vue 3 reactivity
-- **Component Architecture** - Modular design
-- **Responsive Design** - Mobile-first approach
-- **Performance Optimized** - Efficient re-renders
-
-## 📊 Dữ liệu kế hoạch
-
-### Cấu trúc dữ liệu
-```javascript
-export const plan = {
-  1: {
-    Sáng: "2 trứng luộc + 1 quả chuối",
-    Trưa: "Ức gà áp chảo + rau luộc + 1 chén cơm gạo lứt",
-    Tối: "Salad rau củ + 1 quả trứng + 1 lát bơ",
-    "Tập luyện": "30' đi bộ nhanh + 3 bài bụng cơ bản",
-    "Ghi chú": "Ghi cân nặng, chụp hình."
-  }
-  // ... 30 ngày
-}
-```
-
-### Đặc điểm kế hoạch
-- **Dinh dưỡng**: Protein cao, ít carb, nhiều rau xanh
-- **Tập luyện**: Cardio, HIIT, bài bụng, yoga
-- **Tiến độ**: Tăng dần độ khó qua các tuần
-- **Ghi chú**: Động viên và nhắc nhở cụ thể
-
-## 🔄 Cách sử dụng
-
-### 1. Xem kế hoạch
-- Scroll để xem tất cả 30 ngày
-- Mỗi ngày hiển thị 5 mục cần hoàn thành
-
-### 2. Tích chọn hoàn thành
-- Click vào checkbox bên cạnh mỗi mục
-- Trạng thái được lưu tự động
-- Progress bar cập nhật real-time
-
-### 3. Theo dõi tiến độ
-- Xem progress bar ở đầu trang
-- Counter hiển thị số mục đã hoàn thành
-- Tổng cộng 150 mục (30 ngày × 5 mục)
-
-### 4. Lưu trữ dữ liệu
-- Dữ liệu tự động lưu vào browser
-- Không cần đăng nhập hay tài khoản
-- Dữ liệu không bị mất khi reload
-
-## 🚀 Deployment
-
-### Build cho production
-```bash
-npm run build
-```
-
-### Deploy lên Vercel
-```bash
-npm install -g vercel
-vercel
-```
-
-### Deploy lên Netlify
-- Connect GitHub repository
-- Build command: `npm run build`
-- Publish directory: `dist`
-
-## 🔮 Tính năng tương lai
-
-### Planned Features
-- [ ] Export progress to PDF
-- [ ] Share progress on social media
-- [ ] Custom meal plans
-- [ ] Workout timer
-- [ ] Weight tracking
-- [ ] Photo before/after
-- [ ] Push notifications
-- [ ] Dark mode toggle
-
-### Technical Improvements
-- [ ] PWA capabilities
-- [ ] Offline support
-- [ ] Data backup/restore
-- [ ] Multi-language support
-- [ ] Accessibility improvements
-
-## 🤝 Đóng góp
-
-### Cách đóng góp
-1. Fork repository
-2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Tạo Pull Request
-
-### Guidelines
-- Sử dụng Vue 3 Composition API
-- Tuân thủ coding standards
-- Thêm comments cho code phức tạp
-- Test trên mobile và desktop
-
-## 📝 License
-
-MIT License - xem file [LICENSE](LICENSE) để biết thêm chi tiết.
-
-## 👨‍💻 Tác giả
-
-**Iron Fit 30 Days Team**
-
-- **Framework**: Vue 3 + Composition API
-- **Design**: Mobile-first responsive
-- **Data**: LocalStorage persistence
-- **Performance**: Optimized for speed
-
-## 🙏 Cảm ơn
-
-- Vue.js team cho framework tuyệt vời
-- Vite team cho build tool nhanh
-- Google Fonts cho typography đẹp
-- Cộng đồng Vue.js Việt Nam
 
 ---
 
-**💪 Kiên trì là chìa khóa thành công!**
+## 🛒 **Danh sách mua sắm**
 
-*Hãy bắt đầu hành trình 30 ngày của bạn ngay hôm nay!*
+### **Thực phẩm đồ khô (MUA 1 LẦN/THÁNG)**
+- 🥖 **Yến mạch** - 1kg
+- 🍚 **Gạo lứt** - 1kg (chỉ cuối tuần)
+- 🌱 **Hạt chia** - 200g
+- 🥜 **Hạt mix** - 500g
+
+### **Thực phẩm mua theo tuần (4 TUẦN)**
+- 🥖 Bánh mì đen
+- 🥛 Sữa không đường, sữa hạt, sữa chua
+- 🥩 Ức gà, thịt bò, cá (lượng giảm 50%)
+- 🥚 Trứng gà, đậu phụ, đậu hũ non
+- 🥬 Rau củ đa dạng theo tuần
+- 🍎 Trái cây theo mùa
+- 🧂 Gia vị và dầu ăn
+- 🥫 Đồ hộp và thực phẩm khô
+
+---
+
+## 💡 **Lợi ích**
+
+- ✅ **Tiết kiệm thời gian:** Chỉ mua 4 loại đồ khô 1 lần/tháng
+- ✅ **Thực phẩm tươi:** Mua theo tuần giúp tươi ngon hơn
+- ✅ **Tiết kiệm chi phí:** Giảm 50% lượng thịt/cá
+- ✅ **Quản lý dễ dàng:** Checkbox tracking cho từng tuần
+- ✅ **Progress tracking:** Theo dõi tiến độ rõ ràng
+- ✅ **Responsive:** Tối ưu cho mobile
+
+---
+
+## 📅 **Lịch trình**
+
+- **Ngày bắt đầu:** 23/06/2025
+- **Thời gian:** 30 ngày
+- **Tần suất:** 7 ngày/tuần
+- **Bữa ăn:** 2-3 bữa/ngày tùy ngày
+
+---
+
+## 🤝 **Đóng góp**
+
+Mọi đóng góp đều được chào đón! Vui lòng:
+
+1. Fork project
+2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Mở Pull Request
+
+---
+
+## 📄 **License**
+
+Dự án này được phân phối dưới giấy phép MIT. Xem file `LICENSE` để biết thêm chi tiết.
+
+---
+
+## 👨‍💻 **Tác giả**
+
+**Hồng Hạnh** - [GitHub](https://github.com/honghanh3123)
+
+---
+
+<div align="center">
+  <p>💪 <strong>Kỷ Luật Thép - Thành Công Bền Vững!</strong> 💪</p>
+  <p>Made with ❤️ by Hồng Hạnh</p>
+</div>
